@@ -1,0 +1,23 @@
+name: Deploy-Github-Pages
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy-github-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install #install node modules
+        run: yarn install
+
+      - name: Build #build project
+        run: yarn build
+
+      - name: Deploy #deploy to github pages
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        with:
+          branch: gh-pages
+          folder: src/.vuepress/dist/
