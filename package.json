@@ -1,5 +1,8 @@
 {
   "name": "vuepress-blog",
   "version": "1.0.0",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.9.7"
+  }
 }
