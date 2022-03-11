@@ -5,7 +5,8 @@ export default defineConfig(ctx => ({
     description: 'My Blog',
     base: "/vuepress-blog/",
     head: [
-        ['link', {rel: 'icon', href: '/img/icon.svg'}]
+        ['link', {rel: 'icon', href: '/img/icon.svg'}],
+        ['meta', {name: 'viewport', content: 'initial-scale=1,width=device-width'}],
     ],
     themeConfig: {
         smoothScroll: true,
