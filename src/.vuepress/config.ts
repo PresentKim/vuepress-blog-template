@@ -1,6 +1,7 @@
-import {defineConfig} from "vuepress/config";
+import type {DefaultThemeOptions} from 'vuepress'
+import {defineUserConfig} from 'vuepress'
 
-export default defineConfig(ctx => ({
+export default defineUserConfig<DefaultThemeOptions>({
     title: 'VuePress Blog',
     description: 'My Blog',
     base: "/vuepress-blog/",
@@ -10,7 +11,10 @@ export default defineConfig(ctx => ({
     ],
     themeConfig: {
         smoothScroll: true,
-        logo: '/img/icon.svg'
-    },
-    evergreen: !ctx.isProd
-}));
+        logo: '/img/icon.svg',
+
+        contributors: false,
+        docsDir: 'src',
+        repo: 'https://github.com/PresentKim/vuepress-blog',
+    }
+});

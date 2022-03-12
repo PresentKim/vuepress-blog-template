@@ -1,6 +1,8 @@
 /.idea
 /node_modules
 /src/.vuepress/dist
+/src/.vuepress/.cache
+/src/.vuepress/.temp
 
 .DS_Store
 yarn-error.log
