@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.36">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <meta name="viewport" content="initial-scale=1,width=device-width"><link rel="icon" type="image/svg+xml" href="/logo.svg" sizes="any"><link rel="icon" type="image/png" sizes="16x16" href="/favicon/16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon/32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="/favicon/96x96.png"><link rel="icon" type="image/png" sizes="192x192" href="/favicon/192x192.png"><link rel="apple-touch-icon" sizes="180x180" href="/favicon/180x180.png"><link rel="apple-touch-icon" sizes="57x57" href="/favicon/57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/favicon/60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/favicon/72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/favicon/76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/favicon/114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/favicon/120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/favicon/144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/favicon/152x152.png"><meta name="msapplication-square70x70logo" content="/favicon/70x70.png"><meta name="msapplication-TileImage" content="/favicon/144x144.png"><meta name="msapplication-square150x150logo" content="/favicon/150x150.png"><meta name="msapplication-wide310x150logo" content="/favicon/310x150.png"><meta name="msapplication-square310x310logo" content="/favicon/310x310.png"><title>VuePress Blog</title><meta name="description" content="My Blog">
+    <link rel="modulepreload" href="/vuepress-blog/assets/app.1663523f.js"><link rel="modulepreload" href="/vuepress-blog/assets/404.html.e275e9a9.js"><link rel="modulepreload" href="/vuepress-blog/assets/404.html.229bc4e7.js"><link rel="modulepreload" href="/vuepress-blog/assets/plugin-vue_export-helper.21dcd24c.js">
+    <link rel="stylesheet" href="/vuepress-blog/assets/style.3f0e0fb2.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><div class="theme-default-content"><h1>404</h1><blockquote>There&#39;s nothing here.</blockquote><a href="/vuepress-blog/" class="">Take me home</a></div></div><!----><!--]--></div>
+    <script type="module" src="/vuepress-blog/assets/app.1663523f.js" defer></script>
+  </body>
+</html>
